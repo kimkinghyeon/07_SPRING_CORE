@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="board" class="com.ohgiraffers.common.BoardDTO">
+    <constructor-arg name="id" value="1"/>
+    <constructor-arg name="title" value="우끼기"/>
+    <constructor-arg name="content" value="기어세컨드"/>
+    <constructor-arg name="writer" value="루피"/>
+</bean>
+</beans>
