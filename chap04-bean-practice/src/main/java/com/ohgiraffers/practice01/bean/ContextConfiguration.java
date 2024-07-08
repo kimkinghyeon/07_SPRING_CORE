@@ -16,7 +16,7 @@ public class ContextConfiguration {
     @Bean
     @Scope("prototype")
     public PrototypeBean prototypeBean() {
-        return new PrototypeBean((PROTOTYPE_COUNT++) + " 번째 메세지입니다.");
+        return new PrototypeBean((PROTOTYPE_COUNT ++) + " 번째 메세지입니다.");
     }
 
     @Bean(initMethod = "init" , destroyMethod = "destroy")
