@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Scope;
 import java.time.LocalDate;
 
 @Configuration
-@ComponentScan("com.ohgiraffers.section02.initdestroy.subsection02.annotation")
+@ComponentScan("com.ohgiraffers.section02.subsection02.annotation")
 public class ContextConfiguration {
     @Bean
     public Product carpBread(){
