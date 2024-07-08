@@ -21,8 +21,31 @@ public class Account {
     }
 
     // 현재 잔액을 출력해주는 메소드
+    public String getBalance() {
+        return this.accNo + " 계좌의 현재 잔액은 " + this.balance + "원 입니다.";
+    }
 
     // 금액을 매개변수로 전달받아 입금 시켜주는 메소드
-
+    public String deposit(int money) {
+        String str = "";
+        if (money >= 0) {
+            this.balance += money;
+            str = money + "원이 입력되었습니다.";
+        } else {
+            str = "금액을 잘못 입력하였습니다.";
+        }
+        return str;
+    }
     // 금액을 매개변수로 전달받아 출금 시켜주는 메소드
+    public String withDraw(int money){
+        String str ="";
+
+        if (this.balance >= money){
+            this.balance -= money;
+            str = money + "원이 출금되었습니다.";
+        } else {
+            str = "잔액이 부족합니다.";
+        }
+        return str;
+    }
 }
