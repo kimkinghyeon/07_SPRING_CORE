@@ -31,7 +31,7 @@ public class LoggingAspect {
     @Before("logPointcut()")
     public void logBefore(JoinPoint joinPoint){
 
-        // 조인포인트에서 항리. Advice
+        // 조인포인트에서 확인. Advice
         System.out.println("Before joinPoint.getTarget() : " + joinPoint.getTarget());
         System.out.println("Before joinPoint.getSignature : " + joinPoint.getSignature());
 
